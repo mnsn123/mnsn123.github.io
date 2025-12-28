@@ -1,0 +1,43 @@
+/* ===============================
+   Materialize Smart Teal Theme - Corrected
+   Only overrides default-colored components
+   Leaves waves, shadows, and neutral backgrounds intact
+   =============================== */
+
+/* Components with default background → teal, text white */
+nav, .page-footer, .btn, .btn-large, .btn-small, .btn.red, .btn.teal,
+.btn-floating, .fixed-action-btn .btn-floating,
+.progress .determinate, .progress .indeterminate,
+.tabs .indicator,
+.collection-item.active,
+.badge, .badge.new,
+.toast,
+.card,
+.chip,
+.dropdown-content li > a:hover,
+.sidenav,
+table th,
+.pagination li.active,
+.modal .modal-header, .modal .modal-footer {
+  background-color: #26a69a !important;
+  color: #fff !important;
+}
+
+/* Text-only components → teal */
+.red-text, .teal-text, .purple-text, .green-text, .blue-text, 
+.orange-text, .brown-text, .grey-text, .black-text,
+table td, .tabs li a,
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:focus,
+.input-field textarea:focus {
+  color: #26a69a !important;
+  border-bottom: 1px solid #26a69a !important;
+  box-shadow: 0 1px 0 0 #26a69a !important;
+}
+
+/* Buttons hover (slightly darker teal) */
+.btn:hover,
+.btn-floating:hover {
+  background-color: #1e8e8e !important;
+}
